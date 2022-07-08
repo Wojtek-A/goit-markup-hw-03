@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
@@ -10,25 +14,33 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <title>Studio</title>
   </head>
   <body>
-    <header class="menu">
-      <nav>
-        <a class="logo" href="./index.html"
+    <header class="menu container section">
+      <nav class="menu-links">
+        <a class="logo-menu" href="./index.html"
           >Web<span class="logo-color-black">Studio</span></a
         >
-        <a class="menu-link" href="agencja">Agencja</a>
+        <a class="menu-link" href="#">Agencja</a>
         <a class="menu-link" href="./portfolio.html">Portfolio</a>
-        <a class="menu-link" href="kontakt">Kontakt</a>
+        <a class="menu-link" href="#">Kontakt</a>
       </nav>
-      <a class="menu-contact" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="menu-contact" href="tel:+48111111111">+48 111 111 111</a>
+      <ul class="menu-contacts">
+        <li>
+          <a class="menu-contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="menu-contact" href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+      </ul>
     </header>
-    <main>
-      <ul class="portfolio-button-list">
+    <div class="border"></div>
+    <main class="main-portfolio container section">
+      <ul class="portfolio-buttons-list">
         <li>
           <button class="portfolio-button">Wszystkie</button>
         </li>
@@ -45,7 +57,7 @@
           <button class="portfolio-button">Marketing</button>
         </li>
       </ul>
-      <ul>
+      <ul class="portfolio-list">
         <li class="portfolio-list-item">
           <img
             src="./images/technocrack.jpg"
@@ -139,16 +151,28 @@
       </ul>
     </main>
     <footer class="footer">
-      <a class="logo" href="./index.html"
-        >Web<span class="logo-color-white">Studio</span></a
-      >
-      <address class="footer-address">
-        m. Warszawa, Aleje Jerozolimskie 21
-      </address>
-      <a class="footer-contact" href="mailto:info@example.com"
-        >info@example.com</a
-      >
-      <a class="footer-contact" href="+48111111111">+48 111 111 111</a>
+      <div class="container section">
+        <a class="logo-footer" href="./index.html"
+          >Web<span class="logo-color-white">Studio</span></a
+        >
+        <ul class="footer-contacts-list">
+          <li>
+            <address class="footer-address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
+          </li>
+          <li>
+            <a class="footer-contact" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="footer-contact" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
